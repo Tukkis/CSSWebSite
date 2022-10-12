@@ -10,7 +10,17 @@
 <body>
     <div id="header">
         <h1 onclick="window.location.href='../index.html'">WebSite</h1>
-        <img src="../images/551749-200.png" alt="v" id="dropdown-icon">
+        <div class="dropdown">
+            <img src="../images/551749-200.png" alt="v" id="dropdown-icon" onclick="toggleDropDown(event)">
+            <div class="dropdown-content">
+                <a class="drop1" href="../index.html">Home</a>
+                <a class="drop2" href="../frameworks/frameworks.html">Frameworks</a>
+                <a class="drop2" href="./techTips.html">TechTips &lt;-</a>
+                <a class="drop3" href="./animations.html">Animations</a>
+                <a class="drop3" href="./images.html">Images</a>
+                <a class="drop3" href="./positioning.html">Positioning</a>
+            </div>
+        </div>
     </div>
     <div id="main">
         <div class="section" onclick="window.location.href='./positioning.html'">
@@ -57,4 +67,10 @@
         <p>Kaikki pidätetään</p>
     </div>
 </body>
+<script>
+    function toggleDropDown(e){
+        e.target.classList.toggle('active');
+        document.getElementsByClassName('dropdown-content')[0].classList.toggle('dropped');
+        }
+</script>
 </html>

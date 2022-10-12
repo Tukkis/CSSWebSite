@@ -19,6 +19,49 @@ h1{
     width: 15px;
     padding-right: 5px;
     cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.active{
+    transform: rotateX(3.142rad);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    transform: translateX(-160px);
+}
+
+.dropped{
+    display:flex;
+    flex-direction: column;
+}
+
+.dropped>a:hover{
+    color: blue;
+}
+
+.drop1{
+    font-size: 1.5rem;
+}
+
+.drop2{
+    font-size: 1.2rem;
+}
+
+.drop3{
+    font-size: 0.9rem;
 }
 
 #main{
@@ -80,6 +123,10 @@ img{
 
     #dropdown-icon{
         padding-left: 15px;
+    }
+    
+    .dropdown-content{
+        transform: translateX(0px);
     }
 
     .section{
