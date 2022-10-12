@@ -1,0 +1,93 @@
+body{
+    color: #314869;
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+}
+
+#header{
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    cursor: pointer;
+}
+
+#dropdown-icon{
+    width: 15px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+#main{
+    margin: 0;
+}
+
+.section{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 300px;
+    cursor: pointer;
+}
+
+#main>div:nth-child(2n + 1){
+    background-color: #314869;
+    border-radius: 10px;
+    color: white !important;
+}
+
+.section-text{
+    padding: 0 5px 15px 0;
+}
+
+.section-text h2 {
+    padding-left: 5px;
+}
+
+.section-text p {
+    font-size: 16px;
+}
+
+img{
+    width: 100px;
+}
+
+#footer{
+    margin: 10px 30px;
+    border-top: 1px solid gray;
+    color: gray;
+}
+
+.no-pointer{
+    cursor: default;
+}
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@media only screen and (min-width: 768px) {
+
+    #header{
+        justify-content: flex-start;
+    }
+
+    #dropdown-icon{
+        padding-left: 15px;
+    }
+
+    .section{
+        justify-content: center;
+        min-height: 500px;
+    }
+
+    .section-text{
+        padding: 0 50px 15px 0;
+    }
+}
